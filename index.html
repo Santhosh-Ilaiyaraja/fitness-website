@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerge Nutrition - AI-Powered Fitness & Nutrition App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Emerge Nutrition</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#download" class="nav-link">Download</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Nutrition Journey</h1>
+                <p class="hero-subtitle">The revolutionary AI-powered app that scans your food, plans your meals, and tracks your progress. Your personal nutritionist in your pocket.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <i class="fab fa-apple"></i>
+                        Download on App Store
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fab fa-google-play"></i>
+                        Get it on Google Play
+                    </button>
+                </div>
+                <div class="hero-stats-mobile">
+                    <div class="stat-item">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.8★</span>
+                        <span class="stat-label">App Rating</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1M+</span>
+                        <span class="stat-label">Foods Scanned</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-header">
+                            <div class="app-title">Dashboard</div>
+                            <div class="app-menu">⋮</div>
+                        </div>
+                        <div class="app-content">
+                            <div class="calories-card">
+                                <h3>Today's Calories</h3>
+                                <div class="calories-stats">
+                                    <div class="calorie-item">
+                                        <span class="number">0</span>
+                                        <span class="label">Consumed</span>
+                                    </div>
+                                    <div class="calorie-item">
+                                        <span class="number">1898</span>
+                                        <span class="label">Target</span>
+                                    </div>
+                                    <div class="calorie-item">
+                                        <span class="number">1898</span>
+                                        <span class="label">Remaining</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="app-btn scan-btn">
+                                    <i class="fas fa-camera"></i>
+                                    Scan Food
+                                </button>
+                                <button class="app-btn meal-btn">
+                                    <i class="fas fa-utensils"></i>
+                                    Generate Meal Plan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Emerge Nutrition?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>AI Food Scanning</h3>
+                    <p>Simply take a photo of your food and our advanced AI automatically calculates calories, protein, carbs, and fat content with incredible accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Smart Meal Planning</h3>
+                    <p>Get personalized nutrition recommendations and meal plans tailored to your goals, preferences, and dietary restrictions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Comprehensive Tracking</h3>
+                    <p>Monitor your daily progress with detailed analytics, progress charts, and insights to optimize your nutrition journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Beautiful, intuitive interface designed specifically for mobile devices with seamless cross-platform synchronization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Scan Your Food</h3>
+                    <p>Take a photo or upload an image of your meal. Our AI analyzes it instantly to identify ingredients and portions.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Analysis</h3>
+                    <p>Advanced machine learning algorithms calculate precise nutritional information including calories, macros, and micronutrients.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Track Progress</h3>
+                    <p>Monitor your daily intake, view detailed reports, and get insights to stay on track with your nutrition goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots Section -->
+    <section class="app-screenshots">
+        <div class="container">
+            <h2 class="section-title">See It In Action</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-card">
+                    <div class="screenshot-header">
+                        <i class="fas fa-user"></i>
+                        <span>Profile Dashboard</span>
+                    </div>
+                    <div class="screenshot-content">
+                        <div class="mock-profile">
+                            <div class="profile-header">
+                                <div class="profile-icon">👤</div>
+                                <div class="profile-info">
+                                    <h4>Emerge Nutrition User</h4>
+                                    <p>Health & Wellness</p>
+                                </div>
+                            </div>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="value">2124</span>
+                                    <span class="label">Daily Calories</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="value">65kg</span>
+                                    <span class="label">Weight</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="value">165cm</span>
+                                    <span class="label">Height</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-header">
+                        <i class="fas fa-utensils"></i>
+                        <span>Meal Planning</span>
+                    </div>
+                    <div class="screenshot-content">
+                        <div class="mock-meal-plan">
+                            <div class="meal-summary">
+                                <h4>Today's Plan</h4>
+                                <div class="meal-stats">
+                                    <div class="meal-stat">
+                                        <span class="value">3</span>
+                                        <span class="label">Total Meals</span>
+                                    </div>
+                                    <div class="meal-stat">
+                                        <span class="value">800</span>
+                                        <span class="label">Total Calories</span>
+                                    </div>
+                                    <div class="meal-stat">
+                                        <span class="value">58g</span>
+                                        <span class="label">Protein</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="meal-items">
+                                <div class="meal-item">
+                                    <span class="meal-name">Grilled Chicken Salad</span>
+                                    <span class="meal-calories">450 cal</span>
+                                </div>
+                                <div class="meal-item">
+                                    <span class="meal-name">Greek Yogurt with Berries</span>
+                                    <span class="meal-calories">150 cal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <div class="screenshot-header">
+                        <i class="fas fa-camera"></i>
+                        <span>Food Scanning</span>
+                    </div>
+                    <div class="screenshot-content">
+                        <div class="mock-scan">
+                            <div class="scan-title">Scan Your Food</div>
+                            <div class="scan-instruction">Take a photo or upload an image to automatically log your food</div>
+                            <div class="scan-buttons">
+                                <button class="scan-btn-mock">
+                                    <i class="fas fa-camera"></i>
+                                    Take Photo
+                                </button>
+                                <button class="upload-btn-mock">
+                                    <i class="fas fa-image"></i>
+                                    Upload Photo
+                                </button>
+                            </div>
+                            <div class="scan-tips">
+                                <h5>Tips for better results:</h5>
+                                <ul>
+                                    <li>✓ Ensure good lighting</li>
+                                    <li>✓ Include the entire meal in frame</li>
+                                    <li>✓ Avoid shadows and reflections</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>Ready to Transform Your Nutrition?</h2>
+                    <p>Join thousands of users who have already revolutionized their health journey with Emerge Nutrition. Download now and get started for free!</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn app-store">
+                            <i class="fab fa-apple"></i>
+                            <div class="download-text">
+                                <span class="download-label">Download on the</span>
+                                <span class="download-name">App Store</span>
+                            </div>
+                        </a>
+                        <a href="#" class="download-btn google-play">
+                            <i class="fab fa-google-play"></i>
+                            <div class="download-text">
+                                <span class="download-label">Get it on</span>
+                                <span class="download-name">Google Play</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="download-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Free to download</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>No hidden fees</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Premium features available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-image">
+                    <div class="floating-phone">
+                        <div class="phone-frame">
+                            <div class="phone-screen-demo">
+                                <div class="demo-header">Dashboard</div>
+                                <div class="demo-calories">
+                                    <h3>Today's Calories</h3>
+                                    <div class="demo-progress">
+                                        <div class="demo-bar">
+                                            <div class="demo-fill" style="width: 65%"></div>
+                                        </div>
+                                        <span>1,234 / 1,898</span>
+                                    </div>
+                                </div>
+                                <div class="demo-macros">
+                                    <div class="macro-item">
+                                        <div class="macro-icon protein">💪</div>
+                                        <span>45g Protein</span>
+                                    </div>
+                                    <div class="macro-item">
+                                        <div class="macro-icon carbs">🌾</div>
+                                        <span>120g Carbs</span>
+                                    </div>
+                                    <div class="macro-item">
+                                        <div class="macro-icon fat">💧</div>
+                                        <span>35g Fat</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Emerge Nutrition</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Emerge Nutrition was born from a simple idea: making nutrition tracking effortless and accurate. Our team of nutritionists, developers, and AI experts came together to create the most intelligent food tracking app available.</p>
+                    <p>Using cutting-edge artificial intelligence and machine learning, we've revolutionized how people monitor their nutrition. No more manual logging, no more guesswork - just point, shoot, and get instant, accurate nutritional information.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>AI-Powered</h4>
+                                <p>Advanced machine learning for accurate food recognition</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Privacy First</h4>
+                                <p>Your data is secure and never shared with third parties</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Expert Backed</h4>
+                                <p>Developed with certified nutritionists and health professionals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <h3>50K+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="about-stat">
+                        <h3>1M+</h3>
+                        <p>Foods Scanned</p>
+                    </div>
+                    <div class="about-stat">
+                        <h3>4.8★</h3>
+                        <p>App Store Rating</p>
+                    </div>
+                    <div class="about-stat">
+                        <h3>99%</h3>
+                        <p>Accuracy Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Emerge Nutrition</h3>
+                    <p>Your AI-powered nutrition companion for a healthier, more informed lifestyle.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>App Features</h4>
+                    <ul>
+                        <li><a href="#">Food Scanning</a></li>
+                        <li><a href="#">Meal Planning</a></li>
+                        <li><a href="#">Progress Tracking</a></li>
+                        <li><a href="#">AI Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">User Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Emerge Nutrition. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
