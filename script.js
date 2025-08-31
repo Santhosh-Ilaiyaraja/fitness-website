@@ -140,6 +140,42 @@ function animateFloatingPhone() {
     }
 }
 
+const updateCounter = () => {
+    if (current < target) {
+        current += increment;
+        let displayValue;
+
+        // format with 1 decimal if target has decimals
+        if (target % 1 !== 0) {
+            displayValue = current.toFixed(1);
+        } else {
+            displayValue = Math.ceil(current);
+        }
+
+        if (counter.textContent.includes('+')) {
+            counter.textContent = displayValue + '+';
+        } else if (counter.textContent.includes('★')) {
+            counter.textContent = displayValue + '★';
+        } else if (counter.textContent.includes('%')) {
+            counter.textContent = displayValue + '%';
+        } else {
+            counter.textContent = displayValue;
+        }
+        requestAnimationFrame(updateCounter);
+    } else {
+        if (counter.textContent.includes('+')) {
+            counter.textContent = target + '+';
+        } else if (counter.textContent.includes('★')) {
+            counter.textContent = target + '★';
+        } else if (counter.textContent.includes('%')) {
+            counter.textContent = target + '%';
+        } else {
+            counter.textContent = target;
+        }
+    }
+};
+
+
 // Counter animation for statistics
 function animateCounters() {
     const counters = document.querySelectorAll('.stat-number, .about-stat h3');
@@ -148,35 +184,43 @@ function animateCounters() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const counter = entry.target;
-                const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
+                const target = parseFloat(counter.textContent.replace(/[^\d.]/g, ''));
                 const increment = target / 100;
                 let current = 0;
                 
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        if (counter.textContent.includes('+')) {
-                            counter.textContent = Math.ceil(current) + '+';
-                        } else if (counter.textContent.includes('★')) {
-                            counter.textContent = Math.ceil(current) + '★';
-                        } else if (counter.textContent.includes('%')) {
-                            counter.textContent = Math.ceil(current) + '%';
-                        } else {
-                            counter.textContent = Math.ceil(current);
-                        }
-                        requestAnimationFrame(updateCounter);
+                const updateCounter = () => { if (current < target) {
+                    current += increment;
+                    let displayValue;
+            
+                    // format with 1 decimal if target has decimals
+                    if (target % 1 !== 0) {
+                        displayValue = current.toFixed(1);
                     } else {
-                        if (counter.textContent.includes('+')) {
-                            counter.textContent = target + '+';
-                        } else if (counter.textContent.includes('★')) {
-                            counter.textContent = target + '★';
-                        } else if (counter.textContent.includes('%')) {
-                            counter.textContent = target + '%';
-                        } else {
-                            counter.textContent = target;
-                        }
+                        displayValue = Math.ceil(current);
                     }
-                };
+            
+                    if (counter.textContent.includes('+')) {
+                        counter.textContent = displayValue + '+';
+                    } else if (counter.textContent.includes('★')) {
+                        counter.textContent = displayValue + '★';
+                    } else if (counter.textContent.includes('%')) {
+                        counter.textContent = displayValue + '%';
+                    } else {
+                        counter.textContent = displayValue;
+                    }
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    if (counter.textContent.includes('+')) {
+                        counter.textContent = target + '+';
+                    } else if (counter.textContent.includes('★')) {
+                        counter.textContent = target + '★';
+                    } else if (counter.textContent.includes('%')) {
+                        counter.textContent = target + '%';
+                    } else {
+                        counter.textContent = target;
+                    }
+                }
+             };
                 
                 updateCounter();
                 observer.unobserve(counter);

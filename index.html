@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emerge Nutrition - AI-Powered Fitness & Nutrition App</title>
+    <title>NutriTrack - AI-Powered Fitness & Nutrition App</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +14,7 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <i class="fas fa-leaf"></i>
-                <span>Emerge Nutrition</span>
+                <span>NutriTrack</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -48,26 +48,22 @@
                 <h1 class="hero-title">Transform Your Nutrition Journey</h1>
                 <p class="hero-subtitle">The revolutionary AI-powered app that scans your food, plans your meals, and tracks your progress. Your personal nutritionist in your pocket.</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary">
-                        <i class="fab fa-apple"></i>
-                        Download on App Store
-                    </button>
-                    <button class="btn btn-secondary">
-                        <i class="fab fa-google-play"></i>
-                        Get it on Google Play
+                    <button class="btn btn-primary" onclick="document.getElementById('download').scrollIntoView({behavior: 'smooth'})">
+                        <i class="fas fa-download"></i>
+                        How To Download NutriTrack
                     </button>
                 </div>
                 <div class="hero-stats-mobile">
                     <div class="stat-item">
-                        <span class="stat-number">50K+</span>
+                        <span class="stat-number">10+</span>
                         <span class="stat-label">Active Users</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">4.8★</span>
+                        <span class="stat-number">4.6★</span>
                         <span class="stat-label">App Rating</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">1M+</span>
+                        <span class="stat-number">10+</span>
                         <span class="stat-label">Foods Scanned</span>
                     </div>
                 </div>
@@ -117,7 +113,7 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Why Choose Emerge Nutrition?</h2>
+            <h2 class="section-title">Why Choose NutriTrack?</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -146,6 +142,20 @@
                     </div>
                     <h3>Mobile-First Design</h3>
                     <p>Beautiful, intuitive interface designed specifically for mobile devices with seamless cross-platform synchronization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Goal Setting</h3>
+                    <p>Set personalized health and nutrition goals with smart reminders and progress tracking to keep you motivated and on track.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Smart Insights</h3>
+                    <p>Get intelligent recommendations and insights based on your eating patterns to help you make better food choices every day.</p>
                 </div>
             </div>
         </div>
@@ -199,7 +209,7 @@
                             <div class="profile-header">
                                 <div class="profile-icon">👤</div>
                                 <div class="profile-info">
-                                    <h4>Emerge Nutrition User</h4>
+                                    <h4>NutriTrack User</h4>
                                     <p>Health & Wellness</p>
                                 </div>
                             </div>
@@ -296,23 +306,16 @@
         <div class="container">
             <div class="download-content">
                 <div class="download-text">
-                    <h2>Ready to Transform Your Nutrition?</h2>
-                    <p>Join thousands of users who have already revolutionized their health journey with Emerge Nutrition. Download now and get started for free!</p>
-                    <div class="download-buttons">
-                        <a href="#" class="download-btn app-store">
-                            <i class="fab fa-apple"></i>
-                            <div class="download-text">
-                                <span class="download-label">Download on the</span>
-                                <span class="download-name">App Store</span>
-                            </div>
-                        </a>
-                        <a href="#" class="download-btn google-play">
-                            <i class="fab fa-google-play"></i>
-                            <div class="download-text">
-                                <span class="download-label">Get it on</span>
-                                <span class="download-name">Google Play</span>
-                            </div>
-                        </a>
+                    <h2>NutriTrack: Simplify Your Path to Better Health</h2>
+                    <p>We believe good nutrition shouldn't be complicated. With NutriTrack, you get the tools you need to easily log your food and understand your habits so you can reach your goals. It's a simple, free way to start making healthier choices today.</p>
+                    <div class="download-steps">
+                        <h3>How to Get Started</h3>
+                        <p>To access the NutriTrack app, you'll first need to use the <strong>Expo Go</strong> app. It's a quick process that allows you to start your free health journey right away.</p>
+                        <ol class="steps-list">
+                            <li>Download <strong>Expo Go</strong> from the App Store or Google Play.</li>
+                            <li>Sign up for a free account within the <strong>Expo Go</strong> app.</li>
+                            <li>Scan the QR code on this page, and NutriTrack will launch instantly inside <strong>Expo Go</strong>, giving you immediate access to your dashboard.</li>
+                        </ol>
                     </div>
                     <div class="download-features">
                         <div class="feature">
@@ -325,7 +328,7 @@
                         </div>
                         <div class="feature">
                             <i class="fas fa-check"></i>
-                            <span>Premium features available</span>
+                            <span>Easy to use</span>
                         </div>
                     </div>
                 </div>
@@ -368,11 +371,11 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Emerge Nutrition</h2>
+            <h2 class="section-title">About NutriTrack</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Emerge Nutrition was born from a simple idea: making nutrition tracking effortless and accurate. Our team of nutritionists, developers, and AI experts came together to create the most intelligent food tracking app available.</p>
-                    <p>Using cutting-edge artificial intelligence and machine learning, we've revolutionized how people monitor their nutrition. No more manual logging, no more guesswork - just point, shoot, and get instant, accurate nutritional information.</p>
+                    <p>NutriTrack was born from a simple idea: making nutrition tracking a little easier for everyone. Our team of passionate developers came together to build a straightforward tool that helps you stay on top of your health goals without the complexity.</p>
+                    <p>We believe that understanding your nutrition is the first step toward a healthier you, and NutriTrack is designed to help you do just that.</p>
                     <div class="about-highlights">
                         <div class="highlight">
                             <i class="fas fa-robot"></i>
@@ -389,26 +392,26 @@
                             </div>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-magic"></i>
                             <div>
-                                <h4>Expert Backed</h4>
-                                <p>Developed with certified nutritionists and health professionals</p>
+                                <h4>Designed for Simplicity</h4>
+                                <p>Focus on your health goals, not on complicated software</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="about-stat">
-                        <h3>50K+</h3>
+                        <h3>10+</h3>
                         <p>Active Users</p>
                     </div>
                     <div class="about-stat">
-                        <h3>1M+</h3>
+                        <h3>10+</h3>
                         <p>Foods Scanned</p>
                     </div>
                     <div class="about-stat">
-                        <h3>4.8★</h3>
-                        <p>App Store Rating</p>
+                        <h3>4.6★</h3>
+                        <p>App Rating</p>
                     </div>
                     <div class="about-stat">
                         <h3>99%</h3>
@@ -424,45 +427,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Emerge Nutrition</h3>
+                    <h3>NutriTrack</h3>
                     <p>Your AI-powered nutrition companion for a healthier, more informed lifestyle.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-section features-grid-noDisplay">
+                    <h3 class="features-title">App Features</h3>
+                    <div class="features-grid-container">
+                        <div class="feature-item">Food Scanning</div>
+                        <div class="feature-item">Meal Planning</div>
+                        <div class="feature-item">Progress Tracking</div>
+                        <div class="feature-item">AI Analysis</div>
+                        <div class="feature-item">Smart Insights</div>
+                        <div class="feature-item">Calorie Tracking</div>
+                        <div class="feature-item">Macro Tracking</div>
+                        <div class="feature-item">Photo Recognition</div>
+                        <div class="feature-item">Nutrition Analytics</div>
+                        <div class="feature-item">Accuracy</div>
                     </div>
-                </div>
-                <div class="footer-section">
-                    <h4>App Features</h4>
-                    <ul>
-                        <li><a href="#">Food Scanning</a></li>
-                        <li><a href="#">Meal Planning</a></li>
-                        <li><a href="#">Progress Tracking</a></li>
-                        <li><a href="#">AI Analysis</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">User Guide</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Feedback</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Emerge Nutrition. All rights reserved.</p>
+                <p>&copy; 2025 NutriTrack. All rights reserved.</p>
             </div>
         </div>
     </footer>

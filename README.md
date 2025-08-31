@@ -1,6 +1,6 @@
-# Emerge Nutrition - App Landing Page
+# NutriTrack - App Landing Page
 
-A modern, responsive landing page for the Emerge Nutrition mobile app, featuring AI-powered food scanning and nutrition tracking. Built with HTML, CSS, and JavaScript using a MyFitnessPal-inspired color scheme.
+A modern, responsive landing page for the NutriTrack mobile app, featuring AI-powered food scanning and nutrition tracking. Built with HTML, CSS, and JavaScript using a MyFitnessPal-inspired color scheme.
 
 ## 🎨 Color Scheme
 
@@ -172,4 +172,4 @@ For questions or support, please refer to the project documentation or create an
 
 ---
 
-**Built with ❤️ for the Emerge Nutrition team and their amazing AI-powered nutrition app!**
+**Built with ❤️ for the NutriTrack team and their amazing AI-powered nutrition app!**
